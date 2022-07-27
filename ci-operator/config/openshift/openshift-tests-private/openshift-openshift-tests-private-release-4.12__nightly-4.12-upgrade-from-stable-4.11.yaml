@@ -494,6 +494,7 @@ tests:
       UPGRADE_PRE_RUN_TAGS: '@upgrade-prepare and @4.11 and @vsphere-upi'
     test:
     - ref: cucushift-installer-check
+    - ref: cucushift-upgrade-vsphere-hw
     - chain: openshift-upgrade-qe-test
     workflow: cucushift-installer-rehearse-vsphere-upi
 - as: vsphere-upi-proxy-https-p2
@@ -505,6 +506,7 @@ tests:
       UPGRADE_PRE_RUN_TAGS: '@upgrade-prepare and @4.11 and @vsphere-upi'
     test:
     - ref: cucushift-installer-check
+    - ref: cucushift-upgrade-vsphere-hw
     - chain: openshift-upgrade-qe-test
     workflow: cucushift-installer-rehearse-vsphere-upi-proxy-https
 zz_generated_metadata:
